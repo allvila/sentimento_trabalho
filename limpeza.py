@@ -2,7 +2,11 @@ import pandas as pd
 import re
 
 # Lê o arquivo que você coletou
-df = pd.read_csv("resultados.csv")
+df = pd.read_csv("comentarios_g1.csv")
+
+# 📢 PASSO 1: IMPRIMA OS NOMES DAS COLUNAS PARA VERIFICAR!
+print("Nomes das Colunas no CSV:", df.columns.tolist())
+# --------------------------------------------------------
 
 def limpar_texto(texto):
     if not isinstance(texto, str):
@@ -16,10 +20,10 @@ def limpar_texto(texto):
     
     return texto.strip()
 
-# Aplica a limpeza em cada comentário
-df["texto_do_comentario"] = df["texto_do_comentario"].apply(limpar_texto)
+# 📢 PASSO 2: Substitua 'texto_do_comentario' pelo nome correto que apareceu no terminal!
+df["comentario"] = df["comentario"].apply(limpar_texto)
 
 # Salva um novo arquivo limpo
-df.to_csv("resultados_limpos.csv", index=False, encoding="utf-8")
+df.to_csv("resultadosg1_limpos.csv", index=False, encoding="utf-8")
 
-print("✅ Textos limpos e salvos em resultados_limpos.csv")
+print("✅ Textos limpos e salvos em resultadosg1_limpos.csv")
