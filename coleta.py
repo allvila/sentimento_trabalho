@@ -9,8 +9,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException, TimeoutException, StaleElementReferenceException
 
 # --- CONFIGURAÇÕES ---
-USUARIO = "alvilaray"  # ⚠️ Coloque seu usuário do X
-SENHA = "Anaclara8615*"       # ⚠️ Coloque sua senha do X
+USUARIO = "_____"  # ⚠️ Coloque seu usuário do X
+SENHA = "____"       # ⚠️ Coloque sua senha do X
 ARQUIVO_SAIDA = "comentarios_g1.csv"
 URL_LOGIN = "https://x.com/i/flow/login"
 URL_PERFIL = "https://x.com/g1" # Perfíl que será raspado
